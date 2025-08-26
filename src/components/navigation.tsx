@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Menu, X, Phone, Mail, MapPin } from 'lucide-react'
-import { Button } from '@/components/ui/button'
+
 import { businessData } from '@/lib/data'
 
 export default function Navigation() {
@@ -79,7 +79,7 @@ export default function Navigation() {
                 <h1 className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
                   SV Xerox
                 </h1>
-                <p className="text-xs text-gray-600">Ongole's Premier Print Center</p>
+                <p className="text-xs text-gray-600">Ongole&apos;s Premier Print Center</p>
               </div>
             </motion.div>
 
@@ -109,19 +109,24 @@ export default function Navigation() {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                <Button variant="outline" asChild>
-                  <Link href="/contact">Get Quote</Link>
-                </Button>
+                <Link 
+                  href="/contact" 
+                  className="inline-flex items-center justify-center h-9 px-4 py-2 border border-input bg-background shadow-sm hover:bg-accent hover:text-accent-foreground text-sm font-medium transition-colors rounded-md"
+                >
+                  Get Quote
+                </Link>
               </motion.div>
               <motion.div
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                <Button asChild className="bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700">
-                  <Link href={businessData.site.secondaryCTA.href} target="_blank">
-                    WhatsApp
-                  </Link>
-                </Button>
+                <Link 
+                  href={businessData.site.secondaryCTA.href} 
+                  target="_blank" 
+                  className="inline-flex items-center justify-center h-9 px-4 py-2 bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white text-sm font-medium transition-colors rounded-md"
+                >
+                  WhatsApp
+                </Link>
               </motion.div>
             </div>
 
@@ -166,16 +171,20 @@ export default function Navigation() {
                     </motion.div>
                   ))}
                   <div className="flex flex-col space-y-2 pt-4 border-t">
-                    <Button variant="outline" asChild>
-                      <Link href="/contact" onClick={() => setIsOpen(false)}>
-                        Get Quote
-                      </Link>
-                    </Button>
-                    <Button asChild className="bg-gradient-to-r from-green-500 to-green-600">
-                      <Link href={businessData.site.secondaryCTA.href} target="_blank">
-                        WhatsApp Us
-                      </Link>
-                    </Button>
+                    <Link 
+                      href="/contact" 
+                      onClick={() => setIsOpen(false)}
+                      className="inline-flex items-center justify-center h-9 px-4 py-2 border border-input bg-background shadow-sm hover:bg-accent hover:text-accent-foreground text-sm font-medium transition-colors rounded-md"
+                    >
+                      Get Quote
+                    </Link>
+                    <Link 
+                      href={businessData.site.secondaryCTA.href} 
+                      target="_blank" 
+                      className="inline-flex items-center justify-center h-9 px-4 py-2 bg-gradient-to-r from-green-500 to-green-600 text-white text-sm font-medium transition-colors rounded-md"
+                    >
+                      WhatsApp Us
+                    </Link>
                   </div>
                 </div>
               </div>

@@ -35,7 +35,7 @@ export default function ServicesPage() {
             </h1>
             
             <p className="text-xl text-gray-600 leading-relaxed">
-              From business cards to A0 posters, from everyday documents to premium invitations – we've got you covered with professional quality and fast turnaround.
+              From business cards to A0 posters, from everyday documents to premium invitations – we&apos;ve got you covered with professional quality and fast turnaround.
             </p>
           </motion.div>
         </div>
@@ -252,22 +252,21 @@ export default function ServicesPage() {
             </div>
 
             <div className="space-y-4 text-blue-100 mb-8">
-              {businessData.pricingNotes.map((note, index) => (
-                <p key={index} className="text-sm">
-                  • {note}
-                </p>
-              ))}
+              <p className="text-sm">• {businessData.business.policies.turnaround}</p>
+              <p className="text-sm">• {businessData.business.policies.proofing}</p>
+              <p className="text-sm">• {businessData.business.policies.reprints}</p>
             </div>
 
             <motion.div
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              <Button size="lg" asChild className="bg-white text-blue-600 hover:bg-gray-100">
-                <Link href="/contact">
-                  Get Custom Quote
-                </Link>
-              </Button>
+              <Link 
+                href="/contact"
+                className="inline-flex items-center justify-center h-10 rounded-md px-8 bg-white text-blue-600 hover:bg-gray-100 text-sm font-medium transition-colors"
+              >
+                Get Custom Quote
+              </Link>
             </motion.div>
           </motion.div>
         </div>

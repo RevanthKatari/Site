@@ -8,7 +8,7 @@ import { Button } from '@/components/ui/button'
 import { businessData } from '@/lib/data'
 
 export default function ServicesShowcase() {
-  const [activeService, setActiveService] = useState(0)
+
   const [hoveredCard, setHoveredCard] = useState<number | null>(null)
 
   return (
@@ -200,12 +200,13 @@ export default function ServicesShowcase() {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                <Button size="lg" asChild className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700">
-                  <Link href="/contact" className="flex items-center space-x-2">
-                    <span>Get Quote for Large Format</span>
-                    <ArrowRight className="w-5 h-5" />
-                  </Link>
-                </Button>
+                <Link 
+                  href="/contact" 
+                  className="inline-flex items-center justify-center h-10 rounded-md px-8 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white text-sm font-medium transition-colors space-x-2"
+                >
+                  <span>Get Quote for Large Format</span>
+                  <ArrowRight className="w-5 h-5" />
+                </Link>
               </motion.div>
             </div>
 
@@ -253,7 +254,7 @@ export default function ServicesShowcase() {
             Ready to bring your ideas to life?
           </h3>
           <p className="text-lg text-gray-600 mb-8">
-            Contact us for a personalized quote and let's create something amazing together.
+            Contact us for a personalized quote and let&apos;s create something amazing together.
           </p>
           
           <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4">
@@ -261,24 +262,27 @@ export default function ServicesShowcase() {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              <Button size="lg" asChild className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700">
-                <Link href="/contact" className="flex items-center space-x-2">
-                  <span>Get Your Quote</span>
-                  <ArrowRight className="w-5 h-5" />
-                </Link>
-              </Button>
+              <Link 
+                href="/contact" 
+                className="inline-flex items-center justify-center h-10 rounded-md px-8 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white text-sm font-medium transition-colors space-x-2"
+              >
+                <span>Get Your Quote</span>
+                <ArrowRight className="w-5 h-5" />
+              </Link>
             </motion.div>
             
             <motion.div
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              <Button size="lg" variant="outline" asChild>
-                <Link href={businessData.site.secondaryCTA.href} target="_blank" className="flex items-center space-x-2">
-                  <Zap className="w-5 h-5" />
-                  <span>WhatsApp Us</span>
-                </Link>
-              </Button>
+              <Link 
+                href={businessData.site.secondaryCTA.href} 
+                target="_blank" 
+                className="inline-flex items-center justify-center h-10 rounded-md px-8 border border-input bg-background shadow-sm hover:bg-accent hover:text-accent-foreground text-sm font-medium transition-colors space-x-2"
+              >
+                <Zap className="w-5 h-5" />
+                <span>WhatsApp Us</span>
+              </Link>
             </motion.div>
           </div>
         </motion.div>

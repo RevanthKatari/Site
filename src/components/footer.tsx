@@ -41,7 +41,7 @@ export default function Footer() {
               </div>
               <div>
                 <h3 className="text-2xl font-bold">SV Xerox</h3>
-                <p className="text-blue-200 text-sm">Ongole's Premier Print Center</p>
+                <p className="text-blue-200 text-sm">Ongole&apos;s Premier Print Center</p>
               </div>
             </div>
             <p className="text-gray-300 leading-relaxed">

@@ -95,7 +95,7 @@ export default function AboutPage() {
             </h1>
             
             <p className="text-xl text-gray-600 leading-relaxed">
-              {businessData.business.shortAbout} For over a decade, we've been Ongole's trusted partner for all printing needs.
+              {businessData.business.shortAbout} For over a decade, we&apos;ve been Ongole&apos;s trusted partner for all printing needs.
             </p>
           </motion.div>
         </div>
@@ -124,7 +124,7 @@ export default function AboutPage() {
                 </p>
                 
                 <p>
-                  Today, we're proud to serve students, businesses, architects, and individuals 
+                  Today, we&apos;re proud to serve students, businesses, architects, and individuals 
                   throughout Ongole and surrounding areas. Our investment in professional-grade 
                   equipment from brands like Xerox, Canon, Konica Minolta, and Ricoh ensures 
                   that every project receives the attention to detail it deserves.
@@ -276,7 +276,7 @@ export default function AboutPage() {
               Our Journey
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              From humble beginnings to becoming Ongole's premier printing destination.
+              From humble beginnings to becoming Ongole&apos;s premier printing destination.
             </p>
           </motion.div>
 

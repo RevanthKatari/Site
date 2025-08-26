@@ -4,8 +4,8 @@ import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { motion, AnimatePresence } from 'framer-motion'
 import { ArrowRight, Printer, Zap, Award, Users, ChevronDown } from 'lucide-react'
-import { Button } from '@/components/ui/button'
-import { businessData } from '@/lib/data'
+
+
 
 export default function HeroSection() {
   const [currentSlide, setCurrentSlide] = useState(0)
@@ -135,21 +135,25 @@ export default function HeroSection() {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              <Button size="lg" asChild className="bg-white text-gray-900 hover:bg-gray-100 px-8 py-4 text-lg font-semibold">
-                <Link href="/contact" className="flex items-center space-x-2">
-                  <span>Get a Quote</span>
-                  <ArrowRight className="w-5 h-5" />
-                </Link>
-              </Button>
+              <Link 
+                href="/contact" 
+                className="inline-flex items-center justify-center h-10 rounded-md px-8 py-4 bg-white text-gray-900 hover:bg-gray-100 text-lg font-semibold transition-colors space-x-2"
+              >
+                <span>Get a Quote</span>
+                <ArrowRight className="w-5 h-5" />
+              </Link>
             </motion.div>
             
             <motion.div
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              <Button size="lg" variant="outline" asChild className="border-white text-white hover:bg-white hover:text-gray-900 px-8 py-4 text-lg font-semibold">
-                <Link href="/services">View Services</Link>
-              </Button>
+              <Link 
+                href="/services" 
+                className="inline-flex items-center justify-center h-10 rounded-md px-8 py-4 border-white text-white hover:bg-white hover:text-gray-900 text-lg font-semibold transition-colors border"
+              >
+                View Services
+              </Link>
             </motion.div>
           </motion.div>
 
