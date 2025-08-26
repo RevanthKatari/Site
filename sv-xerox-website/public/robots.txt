@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://svxerox.in/sitemap.xml
