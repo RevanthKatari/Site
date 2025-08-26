@@ -7,6 +7,7 @@ import Footer from "@/components/footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://svxerox.vercel.app'),
   title: "SV Xerox Ongole | Professional Printing Services - A0 Large Format, Stickers, Boards",
   description: "SV Xerox in Ongole offers A0 large-format printing, non-tearable stickers (13×19), premium board prints (gold, silver, textured), and fast color/BW document printing. Professional quality guaranteed.",
   keywords: [
@@ -26,7 +27,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_IN",
-    url: "https://svxerox.in",
+    url: "https://svxerox.vercel.app",
     siteName: "SV Xerox Ongole",
     title: "SV Xerox Ongole | Professional Printing Services",
     description: "Professional printing center in Ongole offering A0 large format, premium stickers, specialty boards, and fast document printing.",
@@ -76,7 +77,7 @@ export default function RootLayout({
               },
               "telephone": "+91-9885982762",
               "email": "svxeroxogl@gmail.com",
-              "url": "https://svxerox.in",
+              "url": "https://svxerox.vercel.app",
               "openingHours": [
                 "Mo-Sa 09:00-21:00"
               ],
