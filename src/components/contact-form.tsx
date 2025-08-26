@@ -9,7 +9,7 @@ import {
   Mail, 
   MapPin, 
   Clock, 
-  FileText, 
+
   CheckCircle,
   AlertCircle,
   Loader2
@@ -130,14 +130,14 @@ export default function ContactForm() {
               </motion.div>
               
               <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-                Let's bring your
+                Let&apos;s bring your
                 <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
                   {" "}ideas to life
                 </span>
               </h2>
               
               <p className="text-xl text-gray-600 leading-relaxed">
-                Upload your file and tell us about your project. We'll get back to you with a detailed quote within 2 hours.
+                Upload your file and tell us about your project. We&apos;ll get back to you with a detailed quote within 2 hours.
               </p>
             </div>
 
@@ -432,7 +432,7 @@ export default function ContactForm() {
                 >
                   <div className="flex items-center space-x-2 text-green-700">
                     <CheckCircle className="w-5 h-5" />
-                    <span className="font-medium">Thank you! We'll get back to you within 2 hours.</span>
+                    <span className="font-medium">Thank you! We&apos;ll get back to you within 2 hours.</span>
                   </div>
                 </motion.div>
               )}

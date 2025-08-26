@@ -325,7 +325,7 @@ export default function GalleryPage() {
                 No items in this category yet
               </h3>
               <p className="text-gray-600 mb-8">
-                We're constantly adding new work to our gallery. Check back soon!
+                We&apos;re constantly adding new work to our gallery. Check back soon!
               </p>
               <button
                 onClick={() => setActiveCategory('all')}
@@ -434,7 +434,7 @@ export default function GalleryPage() {
             </h2>
             
             <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-              Let's work together to bring your vision to life with our professional printing services.
+              Let&apos;s work together to bring your vision to life with our professional printing services.
             </p>
             
             <motion.a

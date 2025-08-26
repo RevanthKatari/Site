@@ -64,7 +64,7 @@ export default function FAQPage() {
             <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
               Got questions?
               <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                {" "}We've got answers
+                {" "}We&apos;ve got answers
               </span>
             </h1>
             
@@ -193,7 +193,7 @@ export default function FAQPage() {
                 No results found
               </h3>
               <p className="text-gray-600 mb-8">
-                We couldn't find any questions matching "{searchTerm}". 
+                We couldn&apos;t find any questions matching &quot;{searchTerm}&quot;. 
                 Try different keywords or contact us directly.
               </p>
               <button
@@ -221,7 +221,7 @@ export default function FAQPage() {
             </h2>
             
             <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-              Can't find what you're looking for? Our team is here to help with any specific questions about your printing needs.
+              Can&apos;t find what you&apos;re looking for? Our team is here to help with any specific questions about your printing needs.
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
